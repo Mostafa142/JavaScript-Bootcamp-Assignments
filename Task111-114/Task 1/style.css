@@ -1,0 +1,35 @@
+:root {
+  --font-cairo: "Cairo", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.workstation {
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: var(--font-cairo);
+  color: red;
+  font-size: 16px;
+  border: 3px solid red;
+}
