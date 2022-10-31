@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input,
+      select {
+        margin: 10px 0;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid teal;
+        width: 300px;
+      }
+      input {
+        height: 35px;
+      }
+      div.results {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      input[type="submit"] {
+        background-color: teal;
+        color: white;
+      }
+      .box {
+        width: calc(100% / 4);
+        height: 40px;
+        background-color: teal;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="number"
+        name="elements"
+        class="input"
+        placeholder="Number Of Elements"
+      />
+      <input
+        type="text"
+        name="texts"
+        class="input"
+        placeholder="Elements Text"
+      />
+      <select name="type" class="input">
+        <option value="Div">Div</option>
+        <option value="Section">Section</option>
+      </select>
+      <input type="submit" name="create" value="Create" />
+      <div class="results"></div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
